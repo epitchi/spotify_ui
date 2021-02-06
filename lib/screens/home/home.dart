@@ -8,6 +8,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context, title: 'Chào buổi sáng!'),
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20,),
+        margin: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+        decoration: new BoxDecoration(
+          color: kTabBarColor,
+          borderRadius: BorderRadius.circular(80.0)
+        )
+      )
     );
   }
 }
