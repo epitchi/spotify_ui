@@ -9,12 +9,13 @@ class CustomTabBar extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
+
+
   @override
   Widget build(BuildContext context) {
     return DelayedDisplay(
       delay: Duration(microseconds: 200),
-      
-              child: Container(
+      child: Container(
         padding: EdgeInsets.symmetric(
           vertical: 10,
           horizontal: 20,
@@ -34,26 +35,27 @@ class CustomTabBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             TabItem(
-              name: 'Trang chủ',
+              name: 'HOME',
               icon: 'assets/icons/home.svg',
-              tapEvent: () {},
+              tapEvent: () {
+              },
               isActive: true,
               timeFactor: 1,
             ),
             TabItem(
-                name: 'Tìm Kiếm',
+                name: 'SEARCH',
                 icon: 'assets/icons/search.svg',
                 tapEvent: () {},
-                isActive: true,
+                isActive: false,
                 timeFactor: 2),
             TabItem(
-                name: 'Thư Viện',
+                name: 'LIBRARY',
                 icon: 'assets/icons/library.svg',
                 tapEvent: () {},
                 isActive: false,
                 timeFactor: 3),
             TabItem(
-                name: 'Thông tin cá nhân',
+                name: 'PROFILE',
                 icon: 'assets/icons/profile.svg',
                 tapEvent: () {},
                 isActive: false,
@@ -85,7 +87,7 @@ class TabItem extends StatelessWidget {
     return DelayedDisplay(
       delay: Duration(microseconds: 400 * timeFactor),
       slidingBeginOffset: const Offset(-1.0, 0),
-          child: InkWell(
+      child: InkWell(
         onTap: () {},
         child: Container(
           padding: EdgeInsets.all(5.0),
