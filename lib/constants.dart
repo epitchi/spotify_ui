@@ -8,5 +8,5 @@ const kPopularCardOverlayColor = Color(0XFFAD6AAD);
 const kRecentPlayOverlayColor1 = Color(0XFFAD6A6A);
 const kRecentPlayOverlayColor2 = Color(0XFF1E35D7);
 
-const kDeafualtPadding = 15.0;
+const kDefualtPadding = 15.0;
 
