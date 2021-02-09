@@ -26,6 +26,7 @@ class Body extends StatelessWidget {
               title: '2020 wrapped',
             ),
             YearWrapup()
+            
           ],
         ),
       ),
