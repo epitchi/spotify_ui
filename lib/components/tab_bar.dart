@@ -14,7 +14,7 @@ class CustomTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DelayedDisplay(
-      delay: Duration(microseconds: 200),
+      delay: Duration(milliseconds: 200),
       child: Container(
         padding: EdgeInsets.symmetric(
           vertical: 10,
@@ -85,7 +85,7 @@ class TabItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DelayedDisplay(
-      delay: Duration(microseconds: 400 * timeFactor),
+      delay: Duration(milliseconds: 400 * timeFactor),
       slidingBeginOffset: const Offset(-1.0, 0),
       child: InkWell(
         onTap: () {},

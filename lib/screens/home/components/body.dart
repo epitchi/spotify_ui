@@ -2,7 +2,10 @@ import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
 import 'package:spotify_ui/components/title.dart';
 import 'package:spotify_ui/constants.dart';
+import 'package:spotify_ui/models/PlayList.dart';
+import 'package:spotify_ui/models/Popular.dart';
 import 'package:spotify_ui/models/RecentlyPlay.dart';
+import 'package:spotify_ui/screens/home/components/popular_items.dart';
 import 'package:spotify_ui/screens/home/components/recently_played.dart';
 
 import 'explore_button.dart';
@@ -34,6 +37,10 @@ class Body extends StatelessWidget {
               title: 'RECENTLY PLAYED',
             ),
             RecentlyPlayed(),
+            TitleBar(
+              title: 'POPULAR',
+            ),
+            PopularItems()
           ],
         ),
       ),
