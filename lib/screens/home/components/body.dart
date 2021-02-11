@@ -1,5 +1,9 @@
+import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
 import 'package:spotify_ui/components/title.dart';
+import 'package:spotify_ui/constants.dart';
+import 'package:spotify_ui/models/RecentlyPlay.dart';
+import 'package:spotify_ui/screens/home/components/recently_played.dart';
 
 import 'explore_button.dart';
 import 'my_play_lists.dart';
@@ -25,8 +29,11 @@ class Body extends StatelessWidget {
             TitleBar(
               title: '2020 wrapped',
             ),
-            YearWrapup()
-            
+            YearWrapup(),
+            TitleBar(
+              title: 'RECENTLY PLAYED',
+            ),
+            RecentlyPlayed(),
           ],
         ),
       ),
